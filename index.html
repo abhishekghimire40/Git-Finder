@@ -106,15 +106,330 @@
       <div class="container">
         <!-- Profile section -->
         <section class="profile" data-profile-card>
-          <div class="profile-skeleton">
+          <figure
+            class="avatar-circle img-holder"
+            style="--width: 280; --height: 280"
+          >
+            <img
+              src="./assets/images/profile.jpg"
+              width="280"
+              height="280"
+              alt="abhishekGhimire"
+              class="img-cover"
+            />
+          </figure>
+
+          <h2 class="title-2">Abhishek</h2>
+          <p class="username text-primary">abhishekghimire40</p>
+          <p class="bio">
+            Web Developer ◽ Software Engineer ◽ Tech enthusiast
+          </p>
+          <a href="#" target="_blank" class="btn btn-secondary">
+            <span class="material-symbols-rounded" aria-hidden="true"
+              >open_in_new</span
+            >
+            <span class="span">See on Github</span>
+          </a>
+          <ul class="profile-meta">
+            <li class="meta-item">
+              <span class="material-symbols-rounded" aria-hidden="ture"
+                >location_on</span
+              >
+              <span class="meta-text">New york, US</span>
+            </li>
+            <li class="meta-item">
+              <span class="material-symbols-rounded" aria-hidden="ture"
+                >apartment</span
+              >
+              <span class="meta-text">codewithsadee</span>
+            </li>
+            <li class="meta-item">
+              <span class="material-symbols-rounded" aria-hidden="ture"
+                >captive_portal</span
+              >
+              <a href="#" target="_blank" class="meta-text"
+                >youtube.com/@codewithsadee</a
+              >
+            </li>
+            <li class="meta-item">
+              <span class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.9441 7.92638C19.9568 8.10403 19.9568 8.28173 19.9568 8.45938C19.9568 13.8781 15.8325 20.1218 8.29441 20.1218C5.97207 20.1218 3.81473 19.4492 2 18.2817C2.32996 18.3198 2.64719 18.3325 2.98984 18.3325C4.90605 18.3325 6.67004 17.6853 8.07867 16.5812C6.27664 16.5431 4.76648 15.3629 4.24617 13.7386C4.5 13.7766 4.75379 13.802 5.02031 13.802C5.38832 13.802 5.75637 13.7512 6.09898 13.6624C4.22082 13.2817 2.81215 11.632 2.81215 9.63958V9.58884C3.35781 9.89341 3.99238 10.0838 4.66492 10.1091C3.56086 9.37306 2.83754 8.11673 2.83754 6.6954C2.83754 5.93399 3.04055 5.23603 3.3959 4.62688C5.41367 7.11419 8.44668 8.73853 11.8477 8.91622C11.7842 8.61165 11.7461 8.29442 11.7461 7.97716C11.7461 5.71825 13.5736 3.87817 15.8451 3.87817C17.0253 3.87817 18.0913 4.3731 18.84 5.17259C19.7664 4.99493 20.6547 4.65228 21.4416 4.18274C21.137 5.13454 20.4898 5.93403 19.6395 6.44161C20.4644 6.35282 21.2639 6.12435 21.9999 5.80712C21.4416 6.61927 20.7436 7.34259 19.9441 7.92638Z"
+                    fill="var(--on-background)"
+                  ></path>
+                </svg>
+              </span>
+              <a href="#" target="_blank" class="meta-text">codewithsadee</a>
+            </li>
+          </ul>
+          <ul class="profile-stats">
+            <li class="stats-item"><span class="body">142</span> Repos</li>
+            <li class="stats-item"><span class="body">1.8k</span> Followers</li>
+            <li class="stats-item"><span class="body">24</span> Following</li>
+          </ul>
+          <div class="footer">
+            <p class="copyright">&copy; 2023 Abhishek Ghimire</p>
+          </div>
+          <!-- <div class="profile-skeleton">
             <div class="skeleton avatar-skeleton"></div>
             <div class="skeleton title-skeleton"></div>
             <div class="skeleton text-skeleton text-1"></div>
             <div class="skeleton text-skeleton text-2"></div>
             <div class="skeleton text-skeleton text-3"></div>
+          </div> -->
+        </section>
+
+        <!-- Tab section -->
+        <section class="tab-container">
+          <div class="tab-list" aria-label="Tab navigation" role="tablist">
+            <button
+              class="tab-btn"
+              aria-selected="true"
+              role="tab"
+              id="tab-1"
+              tabindex="0"
+              aria-controls="panel-1"
+              data-tab-btn
+            >
+              Repositories
+            </button>
+            <button
+              class="tab-btn"
+              aria-selected="false"
+              role="tab"
+              id="tab-2"
+              tabindex="-1"
+              aria-controls="panel-2"
+              data-tab-btn
+              data-forked-tab-btn
+            >
+              Forked
+            </button>
+            <button
+              class="tab-btn"
+              aria-selected="false"
+              role="tab"
+              id="tab-3"
+              tabindex="-1"
+              aria-controls="panel-3"
+              data-tab-btn
+              data-follower-tab-btn
+            >
+              Followers
+            </button>
+            <button
+              class="tab-btn"
+              aria-selected="false"
+              role="tab"
+              id="tab-4"
+              tabindex="-1"
+              aria-controls="panel-4"
+              data-tab-btn
+              data-following-tab-btn
+            >
+              Following
+            </button>
           </div>
+
+          <div
+            class="tab-panel"
+            role="tabpanel"
+            id="panel-1"
+            aria-labelledby="tab-1"
+            tabindex="0"
+            data-tab-panel
+            data-repo-panel
+          >
+            <h2 class="sr-only">Repositories</h2>
+
+            <article class="card repo-card">
+              <div class="card-body">
+                <a href="#" target="_blank" class="card-title">
+                  <h3 class="title-3">Weather Starter</h3>
+                </a>
+
+                <p class="card-text">Starter file for weatherio project</p>
+
+                <span class="badge">Public</span>
+              </div>
+
+              <div class="card-footer">
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true">
+                    code_blocks
+                  </span>
+                  <span class="span">CSS</span>
+                </div>
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true">
+                    star_rate
+                  </span>
+                  <span class="span">12</span>
+                </div>
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true">
+                    family_history
+                  </span>
+                  <span class="span">4</span>
+                </div>
+              </div>
+            </article>
+            <div class="card repo-skeleton">
+              <div class="card-body">
+                <div class="skeleton title-skeleton"></div>
+                <div class="skeleton text-skeleton text-1"></div>
+                <div class="skeleton text-skeleton text-2"></div>
+              </div>
+              <div class="card-footer">
+                <div class="skeleton text-skeleton"></div>
+                <div class="skeleton text-skeleton"></div>
+                <div class="skeleton text-skeleton"></div>
+              </div>
+            </div>
+
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">Doesn't have any public repositories yet.</p>
+            </div>
+          </div>
+
+          <div
+            class="tab-panel"
+            role="tabpanel"
+            id="panel-2"
+            aria-labelledby="tab-2"
+            tabindex="0"
+            data-tab-panel
+            data-fork-panel
+            hidden
+          >
+            <h2 class="sr-only">Forked repositories</h2>
+
+            <article class="card repo-card">
+              <div class="card-body">
+                <a href="#" target="_blank" class="card-title">
+                  <h3 class="title-3">Weather Starter</h3>
+                </a>
+
+                <p class="card-text">Starter file for weatherio project</p>
+
+                <span class="badge">Public</span>
+              </div>
+
+              <div class="card-footer">
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true">
+                    code_blocks
+                  </span>
+                  <span class="span">CSS</span>
+                </div>
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true">
+                    star_rate
+                  </span>
+                  <span class="span">12</span>
+                </div>
+                <div class="meta-item">
+                  <span class="material-symbols-rounded" aria-hidden="true">
+                    family_history
+                  </span>
+                  <span class="span">4</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">Doesn't have any forked repositories yet.</p>
+            </div>
+          </div>
+          <div
+            class="tab-panel"
+            role="tabpanel"
+            id="panel-3"
+            aria-labelledby="tab-3"
+            tabindex="0"
+            data-tab-panel
+            data-follower-panel
+            hidden
+          >
+            <h2 class="sr-only">Followers</h2>
+            <article class="card follower-card">
+              <figure class="avatar-circle img-holder">
+                <img
+                  src="./assets/images/follower-img.png"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  alt="johndoe"
+                  class="img-cover"
+                />
+              </figure>
+              <h3 class="card-title">Johndoe</h3>
+              <button class="icon-btn" aria-label="Go to johndoe profile">
+                <span class="material-symbols-rounded">link</span>
+              </button>
+            </article>
+            <div class="card follower-skeleton">
+              <div class="skeleton avatar-skeleton"></div>
+              <div class="skeleton title-skeleton"></div>
+            </div>
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">Doesn't have any follower yet.</p>
+            </div>
+          </div>
+          <div
+            class="tab-panel"
+            role="tabpanel"
+            id="panel-4"
+            aria-labelledby="tab-4"
+            tabindex="0"
+            data-tab-panel
+            data-following-panel
+            hidden
+          >
+            <h2 class="sr-only">Followers</h2>
+            <article class="card follower-card">
+              <figure class="avatar-circle img-holder">
+                <img
+                  src="./assets/images/follower-img.png"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  alt="johndoe"
+                  class="img-cover"
+                />
+              </figure>
+              <h3 class="card-title">Johndoe</h3>
+              <button class="icon-btn" aria-label="Go to johndoe profile">
+                <span class="material-symbols-rounded">link</span>
+              </button>
+            </article>
+
+            <div class="error-content">
+              <p class="title-1">Oops! :(</p>
+              <p class="text">Doesn't have any following yet.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Error content -->
+        <section class="error" data-error>
+          <p class="title-1">Oops! :(</p>
+          <p class="text">There is no account with this username yet.</p>
         </section>
       </div>
     </main>
+
+    <footer class="footer container">
+      <p class="copyright">&copy; 2023 abhishekghimire40</p>
+    </footer>
   </body>
 </html>
